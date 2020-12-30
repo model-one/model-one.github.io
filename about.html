@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Model One</title>
+
+
+    <style>:root {
+    --col-background: white;
+    --col-header: blue;
+    --col-text: black;
+    --col-highlight: red;
+    --col-link: blue;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+
+    background-color: var(--col-background);
+    color: var(--col-text);
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.number {
+    font-size: 1.2em;
+    color: var(--col-highlight);
+}
+
+@media screen and (max-width: 400px) {
+
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}</style>
+
+
+
+    <style>#menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+
+    padding: 15px 0 10px 0;
+    border-bottom: 2px solid var(--col-text);
+
+    color: var(--col-header);
+}
+
+#menu > h1 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.1em;
+
+    font-style: italic;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+nav > ul > li {
+    display: inline;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 400px) {
+
+    #menu > h1 span {
+        display: none;
+    }
+
+}</style>
+
+
+    
+        <style>section {
+    margin-top: 60px;
+}
+
+section h2 {
+    display: inline;
+    margin: 0;
+
+    font-size: 3.2em;
+    font-weight: normal;
+}
+
+article {
+    max-width: 850px;
+
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+article a {
+    text-decoration: underline;
+    color: var(--col-link);
+}
+
+.wrap {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 850px) {
+
+    section {
+        margin-top: 50px;
+    }
+
+    section h2 {
+        font-size: 2.4em;
+    }
+
+    article {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    section {
+        margin-top: 30px;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+}</style>
+    
+
+</head>
+
+<body>
+    <header class="container" id="menu">
+    <h1><a href="/">
+        M<span>ODEL</span>&#9696;O<span>NE</span>
+    </a></h1>
+    <nav>
+        <ul>
+            <li><a href="/about">ABOUT / CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+    <main class="container">
+       <section>
+           <header>
+                <div class="number">ᛘ</div>
+                <h2>About <i>Model One</i></h2>
+            </header>
+            <article>
+                <p>Model One Research is a place for me to post experiments with audio processing and sequencing.</p>
+                <p>I also work as a freelance software developer.</p> 
+                <p>If you'd like to hire me, collaborate, or talk about any of my projects, feel free to get in touch by email.</p>
+                <p><a class="wrap" href="mailto:model.one.research@gmail.com">model.one.research@gmail.com</a></p>
+            </article>
+       </section>
+    </main>
+</body>

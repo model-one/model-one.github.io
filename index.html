@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Model One</title>
+
+
+    <style>:root {
+    --col-background: white;
+    --col-header: blue;
+    --col-text: black;
+    --col-highlight: red;
+    --col-link: blue;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+
+    background-color: var(--col-background);
+    color: var(--col-text);
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.number {
+    font-size: 1.2em;
+    color: var(--col-highlight);
+}
+
+@media screen and (max-width: 400px) {
+
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}</style>
+
+
+
+    <style>#menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+
+    padding: 15px 0 10px 0;
+    border-bottom: 2px solid var(--col-text);
+
+    color: var(--col-header);
+}
+
+#menu > h1 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.1em;
+
+    font-style: italic;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+nav > ul > li {
+    display: inline;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 400px) {
+
+    #menu > h1 span {
+        display: none;
+    }
+
+}</style>
+
+
+    
+        <style>section {
+    margin-top: 100px;
+}
+
+section h2 {
+    display: inline;
+    margin: 0;
+
+    font-size: 3.2em;
+    font-weight: normal;
+}
+
+section > ul {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+section > ul > li {
+    margin-right: 10px;
+}
+
+section > ul li > a:hover {
+    color: var(--col-highlight);
+}
+
+.strike {
+    text-decoration: line-through;
+    opacity: 0.2;
+}
+
+@media screen and (max-width: 850px) {
+
+    section {
+        margin-top: 50px;
+    }
+
+    section h2 {
+        font-size: 2.4em;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    section {
+        margin-top: 30px;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+}
+
+@media screen and (min-width: 850px) {
+
+    section > ul li > a:hover .image {
+        display: block;
+    }
+
+}</style>
+    
+    
+</head>
+
+<body>
+    <header class="container" id="menu">
+    <h1><a href="/">
+        M<span>ODEL</span>&#9696;O<span>NE</span>
+    </a></h1>
+    <nav>
+        <ul>
+            <li><a href="/about">ABOUT / CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+    <main class="container">
+        <section>
+            <ul>
+                
+                    
+                        <li>
+                            <div class="number">ꇓ</div>
+                            <h2 class="strike">Nineteen-Earth</h2>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <div class="number">ᚸ</div>
+                            <a href="/projects/sequencer">
+                                <h2>Sequencing with the Web Audio API</h2>
+                            </a>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <div class="number">ꐟ</div>
+                            <h2 class="strike">Hyper Pulse Dragon</h2>
+                        </li>
+                    
+                
+            </ul>
+        </section>
+    </main>
+</body>

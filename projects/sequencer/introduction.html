@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Model One</title>
+
+
+    <style>:root {
+    --col-background: white;
+    --col-header: blue;
+    --col-text: black;
+    --col-highlight: red;
+    --col-link: blue;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+
+    background-color: var(--col-background);
+    color: var(--col-text);
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.number {
+    font-size: 1.2em;
+    color: var(--col-highlight);
+}
+
+@media screen and (max-width: 400px) {
+
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}</style>
+
+
+
+    <style>#menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+
+    padding: 15px 0 10px 0;
+    border-bottom: 2px solid var(--col-text);
+
+    color: var(--col-header);
+}
+
+#menu > h1 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.1em;
+
+    font-style: italic;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+nav > ul > li {
+    display: inline;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 400px) {
+
+    #menu > h1 span {
+        display: none;
+    }
+
+}</style>
+
+
+    
+        <style>#main-header {
+    margin-top: 60px;
+}
+
+#paging {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    max-width: 850px;
+    margin-left: 40px;
+}
+
+#paging span:last-child {
+    /* this aligns the flex item right */
+    margin-left: auto;
+}
+
+#paging span:hover {
+    cursor: pointer;
+}
+
+.paging-text-small {
+    display: none;
+}
+
+h2 {
+    display: inline;
+    margin: 0;
+
+    font-size: 3.2em;
+    font-weight: normal;
+}
+
+article {
+    max-width: 850px;
+    margin-left: 40px;
+
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+article section {
+    margin-bottom: 60px;
+}
+
+article h3 {
+    margin: 18px 0 0 0;
+
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+article h4 {
+    margin-bottom: 20px;
+
+    font-size: 1.6em;
+    font-weight: normal;
+}
+
+article a {
+    text-decoration: underline;
+    color: var(--col-link);
+}
+
+article pre {
+    padding: 10px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+
+    line-height: 1.1em;
+    background-color: rgb(233, 233, 233);
+}
+
+article figure {
+    max-width: 520px;
+    margin: 50px 0 50px 0;
+}
+
+article figure img {
+    
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 850px) {
+
+    #main-header {
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 2.4em;
+    }
+
+    article {
+        margin-left: 0;
+    }
+
+    #paging {
+        margin-left: 0;
+    }
+
+    article h3 {
+        font-size: 1.6em;
+    }
+
+    article h4 {
+        font-size: 1.4em;
+    }
+
+    article pre {
+        margin-left: 0;
+    }
+
+    article ul {
+        padding-left: 30px;
+    }
+
+    article figure {
+        max-width: 420px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .paging-text-small {
+        display: inline;
+    }
+
+    .paging-text-large {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    #main-header {
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    article h3 {
+        font-size: 1.5em;
+    }
+
+    article h4 {
+        margin-bottom: 15px;
+    }
+
+    article figure {
+        margin: 30px 0 30px 0;
+    }
+
+}</style>
+    
+
+</head>
+
+<body>
+    <header class="container" id="menu">
+    <h1><a href="/">
+        M<span>ODEL</span>&#9696;O<span>NE</span>
+    </a></h1>
+    <nav>
+        <ul>
+            <li><a href="/about">ABOUT / CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+    <main class="container">
+        <header id="main-header">
+<div class="number">ᚸ</div>
+<a href="../sequencer"><h2>Sequencing with the Web Audio API</h2></a>
+</header>
+
+<article>
+
+<header>
+<h3>Introduction</h3>
+</header>
+
+<figure>
+<img src="/img/seq-horiz.png">
+</figure>
+
+<section>
+<h4>What is a sequencer?</h4>
+<p>At its most fundamental, a musical sequencer is a piece of hardware or software that allows us to do the following:</p>
+<ul>
+    <li>Schedule future musical events</li>
+    <li>Manipulate scheduled musical events in real-time</li>
+</ul>
+<p>Any functional implementation of a sequencer&mdash;no matter the underlying technology&mdash;should satisfy at least these two requirements.</p>
+<p>In addition, most modern sequencers provide feedback to the user as the programmed sequence is running. Even primitive analogue sequencers often indicate the passage of time by way of <a href="https://www.youtube.com/watch?v=q1A8EbtkHV8">blinking LEDs</a>.</p>
+<p>Luckily, the Web Audio API provides all of the functionality necessary to meet these requirements in the browser.</p>
+</section>
+
+<section>
+<h4>What is the Web Audio API?</h4>
+<p>The Web Audio API is a JavaScript API for generating and processing audio on the web. As it provides access to a sample-accurate clock on a thread separate from the browser's main control thread, it's well-suited to musical sequencing.</p>
+<p>If you're not familiar with the fundamentals of the Web Audio API, it's highly recommended to begin with the introductory articles at Mozilla: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API">basic concepts behind the Web Audio API</a>.</p>
+<p>For a more technical overview, the complete specification can be found at W3C: <a href="https://www.w3.org/TR/webaudio/">Web Audio API</a>.</p>
+</section>
+
+<section>
+<h4>What will we be building?</h4>
+<p>The projects chosen are simple enough build with very little code, but robust enough to serve as the foundation of any sequencing projects.</p>
+<p>By the end of the next article you should know enough to be able to program static sequences of audio events, and by the end of the final article you will have developed the beginnings of a complex interactive sequencer.</p>
+</section>
+    
+</article>
+        
+    </main>
+</body>
