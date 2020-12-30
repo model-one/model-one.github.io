@@ -16,7 +16,12 @@
 
 @font-face {
     font-family: runic;
-    src: url("/font/BabelStoneRunic.ttf");
+    src: url("/font/runic-BabelStoneRunic.woff");
+}
+
+@font-face {
+    font-family: sun;
+    src: url("/font/sun-Munson.woff");
 }
 
 html {
@@ -77,6 +82,12 @@ a {
     font-size: 1.1em;
 
     font-style: italic;
+}
+
+#sun {
+    font-family: sun;
+    font-size: 1em;
+    line-height: 0.9em;
 }
 
 nav > ul {
@@ -272,7 +283,7 @@ article figure img {
 <body>
     <header class="container" id="menu">
     <h1><a href="/">
-        M<span>ODEL</span>&#9696;O<span>NE</span>
+        M<span>ODEL</span><span id="sun">&#9696;</span>O<span>NE</span>
     </a></h1>
     <nav>
         <ul>
